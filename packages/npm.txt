@@ -1,0 +1,3 @@
+# Global npm packages (language servers not packaged in the Arch repos).
+emmet-ls
+vscode-langservers-extracted

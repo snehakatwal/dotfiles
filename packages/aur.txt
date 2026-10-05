@@ -1,0 +1,10 @@
+# AUR packages (installed with paru).
+anyrun-git
+hyprls
+tokyonight-gtk-theme-git
+neofetch
+
+# --- browsers / handlers named in .config/mimeapps.list
+zen-browser-bin
+google-chrome
+claude-code

@@ -1,0 +1,189 @@
+* {
+  border: none;
+  font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font Mono";
+  font-weight: bold;
+  font-size: 14px;
+  min-height: 0;
+}
+
+window#waybar {
+  color: #e0e0e0;           /* Light gray foreground */
+  border-radius: 5px;
+  padding: 0px;
+  transition-duration: 1s;
+  box-shadow: none; 
+  background: transparent; /* Pure black background */
+}
+
+tooltip {
+  border-radius: 0px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.1); 
+  color: #e0e0e0;
+}
+
+#workspaces button {
+  margin-right: 0px;
+  color: #888888; /* Medium gray */
+  border-radius: 5px;
+}
+
+#workspaces button.active {
+  color: #ffffff; /* White for active */
+}
+
+#workspaces button.focused {
+  color: #00ffff; /* Cyan */
+}
+
+#workspaces button.urgent {
+  color: #ff6666; /* Red alert */
+}
+
+#workspaces button:hover {
+  color: #00ff00; /* Green hover */
+}
+
+#temperature {
+  color: #ff5555; /* Red */
+}
+
+#temperature.critical {
+  color: #ff0000; /* Bright red */
+}
+
+#backlight {
+  color: #00ffff; /* Cyan */
+}
+
+#workspaces {
+  padding: 0px;
+}
+
+#mpris {
+  color: #ff99ff; /* Light magenta */
+}
+
+#custom-cava, #custom-euro {
+  color: #ff99ff; /* Magenta */
+}
+
+#custom-power_profile {
+  color: #00ff00; /* Green */
+}
+
+#window {
+  color: #e0e0e0; /* Foreground */
+}
+
+#clock {
+  color: #ff99ff; /* Magenta */
+}
+
+#custom-arch {
+  color: #3399ff; /* Blue */
+}
+
+#custom-quit {
+  color: #ffaa00; /* Orange */
+}
+
+#custom-lock {
+  color: #00ff00; /* Green */
+}
+
+#custom-sleep {
+  color: #00ffff; /* Cyan */
+}
+
+#custom-reboot {
+  color: #ffaa00; /* Orange */
+}
+
+#custom-shutdown {
+  color: #ff5555; /* Red */
+}
+
+#network {
+  color: #3399ff; /* Blue */
+}
+
+#bluetooth {
+  color: #00ffff; /* Cyan */
+}
+
+#pulseaudio:not(.microphone) {
+  color: #ffaa00; /* Orange */
+}
+
+#pulseaudio.microphone {
+  color: #00ff00; /* Green */
+}
+
+#pulseaudio.bluetooth:not(.microphone) {
+  color: #00ffff; /* Cyan */
+}
+
+#pulseaudio.muted:not(.microphone) {
+  color: #ff5555; /* Red */
+}
+
+#pulseaudio.microphone.source-muted {
+  color: #ff5555; /* Red */
+}
+
+#battery {
+  color: #00ff00; /* Green */
+}
+
+battery.bat2 {
+  color: #00ff00; /* Green */
+}
+
+#custom-weather {
+  color: #ffaa00; /* Orange */
+}
+
+#tray {
+  padding: 0;
+}
+
+window#waybar > box > box > widget > *,
+window#waybar > box > box > box {
+  margin: 0 5px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark transparent */
+}
+
+widget > * {
+  padding: 0 10px;
+}
+
+slider {
+  min-height: 0px;
+  min-width: 0px;
+  opacity: 0;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+}
+
+trough {
+  min-height: 20px;
+  min-width: 80px;
+  border-radius: 5px;
+}
+
+highlight {
+  min-height: 10px;
+  border-radius: 5px;
+}
+
+#light {
+  border-radius: 5px;
+}
+
+#custom-notification {
+  font-family: "NotoSansMono Nerd Font";
+}

@@ -1,0 +1,87 @@
+# Official repo packages. One per line, # starts a comment.
+
+# --- base / tools
+base-devel
+git
+pciutils
+psmisc
+unzip
+ripgrep
+fd
+fzf
+python
+
+# --- hyprland desktop
+hyprland
+hyprlock
+hyprpaper
+hyprpolkitagent
+xdg-desktop-portal-hyprland
+waybar
+dunst
+libnotify
+rofi
+cliphist
+wl-clipboard
+grim
+slurp
+pamixer
+brightnessctl
+playerctl
+cava
+
+# --- apps
+ghostty
+thunar
+thunar-volman
+tumbler
+gvfs
+btop
+imv
+mpv
+nwg-look
+blueman
+bluez
+bluez-utils
+iwd
+
+# --- audio (this setup uses pulseaudio, not pipewire-pulse)
+pulseaudio
+pulseaudio-bluetooth
+
+# --- fonts
+ttf-jetbrains-mono-nerd
+ttf-nerd-fonts-symbols-mono
+ttf-noto-nerd
+noto-fonts
+noto-fonts-emoji
+
+# --- shell
+zsh
+zsh-autosuggestions
+zsh-syntax-highlighting
+starship
+zoxide
+eza
+tmux
+
+# --- neovim + language servers / formatters it calls
+neovim
+gcc
+make
+nodejs
+npm
+lua-language-server
+pyright
+typescript-language-server
+tailwindcss-language-server
+stylua
+prettier
+python-black
+python-isort
+
+# --- login screen (sddm-astronaut-theme deps)
+sddm
+qt6-svg
+qt6-virtualkeyboard
+qt6-multimedia-ffmpeg

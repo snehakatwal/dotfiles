@@ -1,0 +1,7 @@
+theme = TokyoNight Night
+font-size = 15
+window-decoration = true
+background-blur = true
+macos-titlebar-style = hidden
+font-family = JetBrains Mono Nerd Font
+background-opacity = 0.6

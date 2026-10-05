@@ -1,0 +1,38 @@
+[
+  {
+    "output": ["HDMI-A-2"],
+    "position": "top",
+    "ipc": true,
+    "on-sigusr1": "hide",
+    "on-sigusr2": "show",
+    "group/system": {
+      "orientation": "inherit",
+      "modules": ["group/light", "tray", "battery", "network", "bluetooth","custom/notification"],
+    },
+    "modules-left": ["group/power", "clock", "hyprland/workspaces"],
+    "modules-right": ["mpris", "group/audio", "group/system", "custom/clipboard"],
+    // "modules-center" : ["custom/attendance"],
+    "modules-center" : [],
+
+    "include": ["~/.config/waybar/default-modules.jsonc"],
+  },
+  {
+    "output": ["eDP-1"],
+    "position": "top",
+    "persist": true,
+    "ipc": true,
+    "on-sigusr1": "hide",
+    "on-sigusr2": "show",
+    "group/system": {
+      "orientation": "inherit",
+      "modules": ["group/light", "tray", "battery", "network", "bluetooth","custom/notification", "custom/clipboard"],
+    },
+    "modules-left": ["group/power", "clock", "hyprland/workspaces"],
+    "modules-right": ["mpris", "group/audio", "group/system"],
+    // "modules-center" : ["custom/attendance"],
+    "modules-center" : [],
+
+    "include": ["~/.config/waybar/default-modules.jsonc"],
+  },
+  
+]
