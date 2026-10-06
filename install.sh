@@ -67,6 +67,11 @@ setup_tmux() {
     info "Installing tmux plugin manager"
     run git clone --depth 1 https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm"
   fi
+  # A tmux server started before TPM existed never ran the tpm line in .tmux.conf, so
+  # TMUX_PLUGIN_MANAGER_PATH is unset there and install_plugins aborts. Re-source it.
+  if tmux has-session 2>/dev/null; then
+    run tmux source-file "$HOME/.tmux.conf"
+  fi
   info "Installing tmux plugins"
   run "$HOME/.tmux/plugins/tpm/bin/install_plugins"
 }
